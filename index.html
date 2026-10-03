@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nom du Parti</title>
+<link rel="icon" href="assets/logo-bleu.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#accueil" aria-label="Accueil">
+    <img src="assets/logo-blanc.png" alt="">
+    <span>Nom du Parti</span>
+  </a>
+  <nav class="links" id="links">
+    <a href="#dirigeant">Notre dirigeant</a>
+    <a href="#deputes">Nos futurs députés</a>
+    <a href="#parti">Ce Parti</a>
+    <a href="#medias">Médias</a>
+    <a href="#actualites">Actualités</a>
+    <a href="#idees">Nos Idées</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="Rechercher">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    </button>
+    <a class="cta" href="#rejoindre">Joindre le parti</a>
+    <button class="icon-btn burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="search" id="search" hidden>
+  <input id="searchInput" type="search" placeholder="Rechercher : santé, langue, député, nouvelles..." autocomplete="off">
+  <div class="results" id="results"></div>
+</div>
+
+<main>
+<section class="hero" id="accueil">
+  <video class="bg-video" autoplay muted loop playsinline poster="" data-src="assets/hero.mp4"></video>
+  <div class="bg-fx"></div>
+  <img class="hero-mark" src="assets/logo-blanc.png" alt="">
+  <div class="hero-body">
+    <h1>
+      <span class="line"><span>Un Québec</span></span>
+      <span class="line"><span>qui reprend</span></span>
+      <span class="line"><span>la parole.</span></span>
+    </h1>
+    <p class="lead">Une équipe, un plan, une direction claire pour la prochaine élection.</p>
+    <div class="hero-actions">
+      <a class="btn solid" href="#rejoindre">Joindre le parti</a>
+      <a class="btn ghost" href="#idees">Voir nos idées</a>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#dirigeant" aria-label="Défiler"><i></i></a>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Notre langue</span><span>Notre économie</span><span>Nos régions</span><span>Notre avenir</span>
+    <span>Notre langue</span><span>Notre économie</span><span>Nos régions</span><span>Notre avenir</span>
+    <span>Notre langue</span><span>Notre économie</span><span>Nos régions</span><span>Notre avenir</span>
+  </div>
+</div>
+
+<section class="sec" id="dirigeant" data-search="dirigeant chef biographie leader">
+  <div class="wrap split">
+    <div class="portrait reveal">
+      <video class="bg-video" autoplay muted loop playsinline data-src="assets/dirigeant.mp4"></video>
+      <img src="assets/logo-blanc.png" alt="">
+    </div>
+    <div class="reveal">
+      <h2>Notre dirigeant</h2>
+      <p class="big">Prénom Nom, chef du parti.</p>
+      <p>Présentez ici son parcours, ses convictions et la raison pour laquelle il a décidé de mener ce combat. Deux ou trois paragraphes suffisent : d'où il vient, ce qu'il a bâti, ce qu'il promet.</p>
+      <p>Une citation forte, en une phrase, qui résume sa vision du Québec.</p>
+      <a class="btn solid" href="#medias">Voir ses interventions</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="deputes" data-search="députés candidats circonscriptions équipe">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Nos futurs députés</h2>
+      <p>Des gens de chez vous, dans chacune de vos circonscriptions.</p>
+    </div>
+  </div>
+  <div class="rail" id="rail" tabindex="0" aria-label="Candidats"></div>
+</section>
+
+<section class="sec" id="parti" data-search="parti histoire valeurs fondation principes">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Ce Parti</h2>
+      <p class="big">Fondé pour que le Québec décide de son propre avenir.</p>
+    </div>
+    <div class="values">
+      <article class="reveal"><h3>Nous sommes d'ici</h3><p>Un parti né de la base, financé par ses membres, sans lien avec les grands intérêts.</p></article>
+      <article class="reveal"><h3>Nous avons un plan</h3><p>Des engagements chiffrés, publiés, et vérifiables par n'importe quel citoyen.</p></article>
+      <article class="reveal"><h3>Nous écoutons</h3><p>Chaque politique est débattue avec les membres avant d'être adoptée.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="medias" data-search="médias vidéos entrevues presse">
+  <video class="bg-video" autoplay muted loop playsinline data-src="assets/bande.mp4"></video>
+  <div class="bg-fx"></div>
+  <div class="wrap">
+    <div class="head reveal"><h2>Médias</h2><p>Entrevues, discours et reportages.</p></div>
+    <div class="videos">
+      <figure class="vid reveal big-vid"><video muted loop playsinline data-src="assets/media1.mp4"></video><figcaption>Discours d'ouverture de la campagne</figcaption></figure>
+      <figure class="vid reveal"><video muted loop playsinline data-src="assets/media2.mp4"></video><figcaption>Entrevue à la télévision</figcaption></figure>
+      <figure class="vid reveal"><video muted loop playsinline data-src="assets/media3.mp4"></video><figcaption>Rencontre en région</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="actualites" data-search="actualités nouvelles communiqués">
+  <div class="wrap">
+    <div class="head reveal"><h2>Actualités</h2></div>
+    <ul class="news" id="news"></ul>
+  </div>
+</section>
+
+<section class="sec tint" id="idees" data-search="idées plateforme programme propositions économie langue santé éducation régions environnement">
+  <div class="wrap">
+    <div class="head reveal"><h2>Nos Idées</h2><p>Six chantiers. Cliquez pour voir ce que nous proposons.</p></div>
+    <div class="acc" id="acc"></div>
+  </div>
+</section>
+
+<section class="join" id="rejoindre" data-search="rejoindre membre adhésion don">
+  <img class="join-mark" src="assets/logo-blanc.png" alt="">
+  <div class="wrap">
+    <h2>Le Québec se construit avec vous.</h2>
+    <form id="joinForm" novalidate>
+      <input type="text" name="nom" placeholder="Nom complet" required>
+      <input type="email" name="courriel" placeholder="Courriel" required>
+      <input type="text" name="cp" placeholder="Code postal" maxlength="7">
+      <button class="btn solid light" type="submit">Devenir membre</button>
+    </form>
+    <p class="form-msg" id="formMsg" role="status"></p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <img src="assets/logo-blanc.png" alt="">
+  <p>Nom du Parti. Autorisé et payé par l'agent officiel du parti.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
