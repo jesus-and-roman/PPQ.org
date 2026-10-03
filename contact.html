@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nous joindre | Nom du Parti</title>
+<link rel="icon" href="assets/logo-bleu.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<section class="phero"><div class="bg-fx"></div><img class="mark" src="assets/logo-blanc.png" alt="">
+<div class="wrap"><div class="crumb"><a href="index.html">Accueil</a> / Nous joindre</div><h1>Nous joindre</h1><p>Écrivez-nous, nous répondons à tous les messages.</p></div></section>
+<section class="sec"><div class="wrap cols2">
+  <div><form class="form" data-form data-ok="Merci. Votre message est envoyé." novalidate>
+      <label for="n">Nom</label><input id="n" type="text" required>
+      <label for="c">Courriel</label><input id="c" type="email" required>
+      <label for="s">Sujet</label><select id="s"><option>Question générale</option><option>Presse</option><option>Candidature</option><option>Proposition d'idée</option></select>
+      <label for="m">Message</label><textarea id="m" required></textarea>
+      <button class="btn" type="submit">Envoyer</button></form>
+    <p class="form-msg" role="status"></p></div>
+  <div class="prose"><h2>Coordonnées</h2>
+    <p><strong>Courriel</strong><br>info@exemple.qc</p>
+    <p><strong>Téléphone</strong><br>000 000-0000</p>
+    <p><strong>Siège</strong><br>Adresse, ville, Québec</p>
+    <p><strong>Presse</strong><br>presse@exemple.qc</p></div>
+</div></section>
+</main><script src="data.js"></script><script src="script.js"></script></body></html>
